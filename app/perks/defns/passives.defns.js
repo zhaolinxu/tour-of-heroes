@@ -410,7 +410,7 @@ var PASSIVES;
             configurable: true
         });
         WoodsmanPerk.sname = "Dendrophile";
-        WoodsmanPerk.zone = "Woody Woods";
+        WoodsmanPerk.zone = "伍迪森林";
         WoodsmanPerk.spMultiplier = .5;
         return WoodsmanPerk;
     }(HomeZonePassive));

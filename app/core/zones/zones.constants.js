@@ -11,7 +11,7 @@ exports.SUPERZONEDATA = [
         minLevel: 0,
         zones: [
             {
-                name: 'Turnip Farm',
+                name: '萝卜农场',
                 description: "\u8FD9\u662F\u4E00\u4E2A\u8BA9\u519C\u6C11\u4EEC\u5B66\u4E60\u571F\u5730\u7684\u597D\u5730\u65B9--\u841D\u535C\u662F\u4E00\u79CD\u975E\u5E38\u5BBD\u5BB9\u7684\u4F5C\u7269\u3002",
                 actions: [
                     { vb: "pull", obj: "a turnip", skills: index_1.SkillType.Farming },
@@ -20,8 +20,8 @@ exports.SUPERZONEDATA = [
                 difficulty: 0,
             },
             {
-                name: 'Woody Woods',
-                description: "A small forest where locals go to collect firewood.\n        Watch out for critters.",
+                name: '伍迪森林',
+                description: "一个小树林，当地人去那里收集柴火。\n       当心小动物。",
                 actions: [
                     { vb: "chop", obj: "__X", opts: ["an oak", "a spruce", "a pine"],
                         skills: index_1.SkillType.Survival, weight: .8 },
@@ -45,7 +45,7 @@ exports.SUPERZONEDATA = [
             },
             {
                 name: 'Flower Fields',
-                description: 'Row upon row of pretty, pretty flowers',
+                description: '一排排美丽的鲜花',
                 actions: [
                     { vb: 'plant', obj: 'some __X', opts: FLOWERS, skills: index_1.SkillType.Farming,
                         difficulty: zones_data_defns_1.additiveOverride(9) },
@@ -62,7 +62,7 @@ exports.SUPERZONEDATA = [
         zones: [
             {
                 name: 'Chapel',
-                description: 'A place of worship',
+                description: '一个朝圣的地方',
                 actions: [
                     { vb: "pray", obj: "", skills: index_1.SkillType.Piety },
                 ],
@@ -70,7 +70,7 @@ exports.SUPERZONEDATA = [
             },
             {
                 name: 'General Store',
-                description: 'A generally good place to steal',
+                description: '通常是偷窃的好地方',
                 actions: [
                     { vb: "nick", obj: "a knicknack", skills: index_1.SkillType.Stealth },
                     { vb: "nick", obj: "an antique", skills: index_1.SkillType.Stealth, bonusLevel: 1 },

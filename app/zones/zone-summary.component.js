@@ -54,7 +54,7 @@ var ZoneSummaryComponent = (function () {
         this.cd.markForCheck();
     };
     ZoneSummaryComponent.prototype.buttonText = function () {
-        return this.locked ? "Locked" : "Go";
+        return this.locked ? "未解锁" : "前往";
     };
     ZoneSummaryComponent.prototype.nameString = function (zone) {
         return zone.name;
@@ -136,7 +136,7 @@ var ZoneSummaryComponent = (function () {
             directives: [router_1.ROUTER_DIRECTIVES, skill_component_1.SkillComponent],
             styles: ["\n        "],
             changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-            template: "\n    <div class=\"row\">\n\n    <div class=\"col-xs-2\">\n    <span title=\"DEBUG: difficulty={{zone.difficulty}}\">{{nameString(zone)}}</span>\n    </div>\n\n    <div class=\"col-xs-1\">\n        {{zone.difficulty}}\n    </div>\n\n    <div class=\"col-xs-4\">\n    <span *ngFor=\"let diff of difficulties()\">\n        <skill [skill]=\"diff.skill\"\n            [bg]=\"difficultyColor(diff.difficulty)\"\n            [title]=\"difficultyString(diff)\"\n            >\n        </skill>\n    </span>\n    </div>\n\n    <div class=\"col-xs-2\">\n    <span class=\"overall-difficulty\"\n    >\n          {{penaltyString(overallDifficulty())}}\n    </span>\n    </div>\n\n    <div class=\"col-xs-3\" *ngIf=\"live\">\n    <button *ngIf=\"!youAreHere\"\n        class=\"btn\"\n        [class.disabled]=\"locked\"\n        (click)=\"explore()\">\n        {{buttonText()}}</button>\n    <h4 *ngIf=\"youAreHere\">\n        <span class=\"label label-success\">\n        You are here\n        </span>\n    </h4>\n    </div>\n\n    </div>\n    "
+            template: "\n    <div class=\"row\">\n\n    <div class=\"col-xs-2\">\n    <span title=\"DEBUG: difficulty={{zone.difficulty}}\">{{nameString(zone)}}</span>\n    </div>\n\n    <div class=\"col-xs-1\">\n        {{zone.difficulty}}\n    </div>\n\n    <div class=\"col-xs-4\">\n    <span *ngFor=\"let diff of difficulties()\">\n        <skill [skill]=\"diff.skill\"\n            [bg]=\"difficultyColor(diff.difficulty)\"\n            [title]=\"difficultyString(diff)\"\n            >\n        </skill>\n    </span>\n    </div>\n\n    <div class=\"col-xs-2\">\n    <span class=\"overall-difficulty\"\n    >\n          {{penaltyString(overallDifficulty())}}\n    </span>\n    </div>\n\n    <div class=\"col-xs-3\" *ngIf=\"live\">\n    <button *ngIf=\"!youAreHere\"\n        class=\"btn\"\n        [class.disabled]=\"locked\"\n        (click)=\"explore()\">\n        {{buttonText()}}</button>\n    <h4 *ngIf=\"youAreHere\">\n        <span class=\"label label-success\">\n        你当前在这里\n        </span>\n    </h4>\n    </div>\n\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [router_1.Router, zones_service_1.Zones, player_service_1.PlayerService, core_1.ChangeDetectorRef])
     ], ZoneSummaryComponent);
