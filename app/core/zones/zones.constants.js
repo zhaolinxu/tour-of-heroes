@@ -4,7 +4,7 @@ var index_1 = require('../skills/index');
 var index_2 = require('../stats/index');
 var action_oneshots_enum_1 = require('./action-oneshots.enum');
 var CHEAT_POINTS = 5000;
-var FLOWERS = ["poppies", "daisies", "roses", "orchids", "violets", "begonias"];
+var FLOWERS = ["罂粟花", "雏菊", "玫瑰", "兰花", "紫罗兰", "秋海棠"];
 exports.SUPERZONEDATA = [
     {
         name: '田野',
@@ -14,8 +14,8 @@ exports.SUPERZONEDATA = [
                 name: '萝卜农场',
                 description: "\u8FD9\u662F\u4E00\u4E2A\u8BA9\u519C\u6C11\u4EEC\u5B66\u4E60\u571F\u5730\u7684\u597D\u5730\u65B9--\u841D\u535C\u662F\u4E00\u79CD\u975E\u5E38\u5BBD\u5BB9\u7684\u4F5C\u7269\u3002",
                 actions: [
-                    { vb: "pull", obj: "a turnip", skills: index_1.SkillType.Farming },
-                    { vb: "pull", obj: "a HUGE turnip", skills: index_1.SkillType.Farming, bonusLevel: 1 },
+                    { vb: "拔出", obj: "一个萝卜", skills: index_1.SkillType.Farming },
+                    { vb: "拔出", obj: "一个巨大的萝卜", skills: index_1.SkillType.Farming, bonusLevel: 1 },
                 ],
                 difficulty: 0,
             },
