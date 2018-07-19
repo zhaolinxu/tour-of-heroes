@@ -134,7 +134,7 @@ import { GLOBALS } from '../globals';
         class="big-icon"
         [class.locked]="!KS.focalKlass.unlocked">
 
-    <h3><span class="label label-default">Aptitudes</span></h3>
+    <h3><span class="label label-default">天赋</span></h3>
     <div class="apts">
         <div class="row apt-row"
             *ngFor="let pair of aptitudePairs(KS.focalKlass)">
