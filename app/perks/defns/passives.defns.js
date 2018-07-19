@@ -307,7 +307,7 @@ var PASSIVES;
         ArcherPerk.sname = "Elf Eyes";
         ArcherPerk.critChance = .05;
         ArcherPerk.critMultiplierPlus = 1.0;
-        ArcherPerk.sdescription = ArcherPerk.critChance * 100 + "% increased chance for critical actions and increases critical action multiplier another 100%";
+        ArcherPerk.sdescription = ArcherPerk.critChance * 100 + "% 的几率增加了关键行动，并提高另一个关键行动100%的倍率";
         return ArcherPerk;
     }(MetadataPassive));
     PASSIVES.ArcherPerk = ArcherPerk;
@@ -351,7 +351,7 @@ var PASSIVES;
         // TODO: Is it possible to store a string property that uses something like
         // angular's templating syntax, and sort of 'eval' that in a template?
         // In particular, it'd be nice to be able to use pipes here.
-        PeasantPerk.sdescription = "Base aptitudes increased by " + PeasantPerk.aptMultiplier * 100 + "% until level " + PeasantPerk.levelThreshold;
+        PeasantPerk.sdescription = "基础能力会增加 " + PeasantPerk.aptMultiplier * 100 + "%  当你等级达到 " + PeasantPerk.levelThreshold;
         return PeasantPerk;
     }(OnOffPerk));
     PASSIVES.PeasantPerk = PeasantPerk;
