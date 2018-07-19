@@ -385,7 +385,7 @@ var PASSIVES;
         HorsemanPerk.prototype.onCast = function (AS) {
             this.sub = AS.protoActionOutcomeSubject
                 .filter(function (proto) {
-                return proto.zone.name == 'Stables';
+                return proto.zone.name == '马厩';
             })
                 .subscribe(function (proto) {
                 proto.spMultiplier += HorsemanPerk.spMultiplier;

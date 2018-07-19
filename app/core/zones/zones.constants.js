@@ -7,7 +7,7 @@ var CHEAT_POINTS = 5000;
 var FLOWERS = ["poppies", "daisies", "roses", "orchids", "violets", "begonias"];
 exports.SUPERZONEDATA = [
     {
-        name: 'Fields',
+        name: '田野',
         minLevel: 0,
         zones: [
             {
@@ -33,7 +33,7 @@ exports.SUPERZONEDATA = [
                 difficulty: 1,
             },
             {
-                name: 'Stables',
+                name: '马厩',
                 description: "If Hercules wasn't too good to clean stables, then neither\n        are you",
                 actions: [
                     { vb: "ride", obj: "a steed", skills: index_1.SkillType.Riding, weight: 1, difficulty: zones_data_defns_1.additiveOverride(-1) },
@@ -57,7 +57,7 @@ exports.SUPERZONEDATA = [
             },
         ] },
     {
-        name: 'Village',
+        name: '村庄',
         minLevel: 5,
         zones: [
             {
@@ -110,7 +110,7 @@ exports.SUPERZONEDATA = [
         ]
     },
     {
-        name: 'Cave Complex',
+        name: '洞穴',
         minLevel: 12,
         zones: [
             {
@@ -163,7 +163,7 @@ exports.SUPERZONEDATA = [
         ]
     },
     {
-        name: 'City',
+        name: '城市',
         minLevel: 20,
         zones: [
             {
@@ -231,7 +231,7 @@ exports.SUPERZONEDATA = [
     // ]
     // },
     {
-        name: 'Hinterlands',
+        name: '内陆地区',
         minLevel: 50,
         zones: [
             {

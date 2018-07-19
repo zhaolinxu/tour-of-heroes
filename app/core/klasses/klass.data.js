@@ -323,7 +323,7 @@ exports.KLASSES = [
         img: 'horseman.png',
         hint: "Show great stability",
         criteria: function (s) {
-            return s.lifetimeSumActionsTaken('Stables') / 1000;
+            return s.lifetimeSumActionsTaken('马厩') / 1000;
         }
     }
 ];

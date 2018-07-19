@@ -88,21 +88,21 @@ var AppComponent = (function () {
         with gh-pages + single page sites.
         **/
         var s = this.KS.nUnlocked > 1 ?
-            "Looks like you've already unlocked a new class. Head over to the\n            Classes tab to start a new life. Or if you have no desire for\n            upward mobility, feel free to keep living that Peasant life..."
+            "看起来你已经解锁了一个新类。前往阶级选项卡，开始新的生活。或者如果你没有上进心，你可以继续过农民的生活……"
             :
-                "Looks like you haven't unlocked any classes yet. Head over to the\n            Classes tab for some unlock hints. If you really want, you can\n            reincarnate into a level 1 Peasant (also in Classes)\n            and start again with a slight boost to your aptitudes.";
+                "看起来您还没有解锁任何阶级。前往阶级选项卡获取一些解锁提示。如果你真的想要，你可以转世成一个一级农民(也在阶级选项卡里面)，然后重新开始，记得要稍微提高你的能力。";
         this.modal.alert()
             .size('lg')
             .showClose(true)
             .title("Level " + globals_1.GLOBALS.reincarnationMinLevel + "!")
-            .body("<p>Congratulations on reaching level " + globals_1.GLOBALS.reincarnationMinLevel + ".\n                You're ready to <b>reincarnate</b>. Reincarnation lets you live a\n                new life as a different class. After your first reincarnation, you'll\n                start receiving a boost to your aptitudes based on the highest level\n                you've reached with each class - it pays to unlock and level as\n                many classes as possible.</p>\n                <p>" + s + "</p>\n                ").open();
+            .body("<p>祝贺达到等级 " + globals_1.GLOBALS.reincarnationMinLevel + ".\n                你现在可以 <b>转生</b>。转世让你作为一个不同的阶级过着新的生活。 在你的第一次转生之后，你将开始提升你的能力，基于你已经达到的最高级别，每一个阶级都要付出代价——尽可能多地解锁阶级和升级。</p>\n                <p>" + s + "</p>\n                ").open();
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
             directives: [router_1.ROUTER_DIRECTIVES],
             styles: ["\n        .save {\n            margin-top: 15px;\n        }\n        /* TODO: this is hacky in every respect */\n        >>> .toast-klassname {\n            margin-left: 110px;\n        }\n    "],
-            template: "\n    <span defaultOverlayTarget></span>\n    <simple-notifications></simple-notifications>\n    <div class=\"container\">\n    <ul class=\"nav nav-pills\">\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n            <a [routerLink]=\"['/']\">首页</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/classes']\">段位</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/stats']\">统计</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/about']\">关于</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/debug']\" *ngIf=\"cheatMode\">调试</a></li>\n    </ul>\n    <router-outlet></router-outlet>\n    <div class=\"row save\" *ngIf=\"cheatMode\">\n    <button (click)=\"serials.save()\">保存</button>\n    <button (click)=\"serials.clearSave()\">清除存档</button>\n    </div>\n    </div>\n  ",
+            template: "\n    <span defaultOverlayTarget></span>\n    <simple-notifications></simple-notifications>\n    <div class=\"container\">\n    <ul class=\"nav nav-pills\">\n        <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n            <a [routerLink]=\"['/']\">首页</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/classes']\">阶级</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/stats']\">统计</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/about']\">关于</a></li>\n        <li [routerLinkActive]=\"['active']\"><a [routerLink]=\"['/debug']\" *ngIf=\"cheatMode\">调试</a></li>\n    </ul>\n    <router-outlet></router-outlet>\n    <div class=\"row save\" *ngIf=\"cheatMode\">\n    <button (click)=\"serials.save()\">保存</button>\n    <button (click)=\"serials.clearSave()\">清除存档</button>\n    </div>\n    </div>\n  ",
             providers: [index_1.Modal,
                 zones_service_1.Zones, klass_service_1.KlassService, serialization_service_1.SerializationService,
                 stats_service_1.StatsService,
