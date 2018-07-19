@@ -71,7 +71,7 @@ function loadSuperZones(zoneLevels) {
         var supz = {
             name: superzone.name,
             zones: zones,
-            unlockDescription: "Unlocked at level " + superzone.minLevel,
+            unlockDescription: "解锁需要等级 " + superzone.minLevel,
             unlockCondition: function (level) { return level >= superzone.minLevel; }
         };
         superzones.push(supz);

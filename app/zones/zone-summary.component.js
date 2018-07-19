@@ -79,20 +79,20 @@ var ZoneSummaryComponent = (function () {
     ZoneSummaryComponent.prototype.difficultyString = function (d) {
         var diffWordFn = function (diff) {
             if (diff <= 0.005) {
-                return 'easy';
+                return '容易';
             }
             else if (diff <= .5) {
-                return 'challenging';
+                return '有挑战性';
             }
             else if (diff <= 2) {
-                return 'hard';
+                return '困难';
             }
             else {
-                return 'grueling';
+                return '噩梦';
             }
         };
         var currSkill = this.PS.getSkillLevel(d.skill);
-        return diffWordFn(d.difficulty) + ":\n            penalty=" + this.penaltyString(d.difficulty) + "\n             mastered at level " + Math.ceil(d.masteredAt) + " (currently: " + currSkill + ")";
+        return diffWordFn(d.difficulty) + ":\n            惩罚=" + this.penaltyString(d.difficulty) + "\n             掌握需要等级 " + Math.ceil(d.masteredAt) + " (当前: " + currSkill + ")";
     };
     ZoneSummaryComponent.prototype.penaltyString = function (penalty) {
         var pct = (penalty * 100).toFixed(0);
