@@ -36,7 +36,7 @@ exports.SkillGainsPipe = SkillGainsPipe;
 //# sourceMappingURL=skill-gains.pipe.js.map
 
 //汉化人物属性
-function cntext(text){
+function cnText(text){
     var cntext="";
     var temp=text;
     if(temp=="Farming"){
