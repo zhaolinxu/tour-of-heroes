@@ -12,7 +12,7 @@ exports.SUPERZONEDATA = [
         zones: [
             {
                 name: 'Turnip Farm',
-                description: "\u8FD9\u662F\u4E00\u4E2A\u8BA9\u5B66\u5F92\u4EEC\u5B66\u4E60\u571F\u5730\u7684\u597D\u5730\u65B9\u2014\u2014\u841D\u535C\u662F\u4E00\u79CD\u76F8\u5F53\u5BBD\u5BB9\u7684\u4F5C\u7269\u3002",
+                description: "\u8FD9\u662F\u4E00\u4E2A\u8BA9\u519C\u6C11\u4EEC\u5B66\u4E60\u571F\u5730\u7684\u597D\u5730\u65B9--\u841D\u535C\u662F\u4E00\u79CD\u975E\u5E38\u5BBD\u5BB9\u7684\u4F5C\u7269\u3002",
                 actions: [
                     { vb: "pull", obj: "a turnip", skills: index_1.SkillType.Farming },
                     { vb: "pull", obj: "a HUGE turnip", skills: index_1.SkillType.Farming, bonusLevel: 1 },
