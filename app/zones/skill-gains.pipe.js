@@ -22,7 +22,7 @@ var SkillGainsPipe = (function () {
             }
             var skillName = index_1.SkillType[skill];
             // TODO: probably makes more sense as a component to make use of builtin pipes?
-            gainstr += skillName + "+" + gains[skill].toFixed(1);
+            gainstr += cnText(skillName) + "+" + gains[skill].toFixed(1);
         }
         return gainstr;
     };
@@ -34,3 +34,32 @@ var SkillGainsPipe = (function () {
 }());
 exports.SkillGainsPipe = SkillGainsPipe;
 //# sourceMappingURL=skill-gains.pipe.js.map
+
+//汉化人物属性
+function cntext(text){
+    var cntext="";
+    var temp=text;
+    if(temp=="Farming"){
+        cntext="耕作"
+    }else if(temp=="Combat"){
+        cntext="战斗"
+    }else if(temp=="Survival"){
+        cntext="生存"
+    }else if(temp=="Charm"){
+        cntext="魅力"
+    }else if(temp=="Stealth"){
+        cntext="隐形"
+    }else if(temp=="Riding"){
+        cntext="骑术"
+    }else if(temp=="Intellect"){
+        cntext="智力"
+    }else if(temp=="Piety"){
+        cntext="虔诚"
+    }else if(temp=="MAX"){
+        cntext="最大"
+    }else{
+console.log("需汉化的英文："+text);
+        return text;
+    }
+    return cntext;
+}
