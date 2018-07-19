@@ -372,7 +372,7 @@ var PASSIVES;
         };
         GladiatorPerk.sname = "Pit Fighter";
         GladiatorPerk.spMultiplier = .5;
-        GladiatorPerk.sdescription = "SP gains increased by " + GladiatorPerk.spMultiplier * 100 + "% when adventuring in the Colloseum";
+        GladiatorPerk.sdescription = "SP的收益增加了 " + GladiatorPerk.spMultiplier * 100 + "% 在竞技场里冒险的时候";
         return GladiatorPerk;
     }(WatcherPassive));
     PASSIVES.GladiatorPerk = GladiatorPerk;
@@ -393,7 +393,7 @@ var PASSIVES;
         };
         HorsemanPerk.sname = "Stability";
         HorsemanPerk.spMultiplier = .5;
-        HorsemanPerk.sdescription = "SP gains increased by " + HorsemanPerk.spMultiplier * 100 + "% when adventuring in the Stables";
+        HorsemanPerk.sdescription = "SP的收益增加了 " + HorsemanPerk.spMultiplier * 100 + "% 在马厩里冒险时。";
         return HorsemanPerk;
     }(WatcherPassive));
     PASSIVES.HorsemanPerk = HorsemanPerk;
@@ -404,12 +404,12 @@ var PASSIVES;
         }
         Object.defineProperty(WoodsmanPerk, "sdescription", {
             get: function () {
-                return "SP gains increased by " + this.spMultiplier * 100 + "% when adventuring in the " + this.zone;
+                return "SP的收益增加了 " + this.spMultiplier * 100 + "% 当在 " + this.zone + "冒险时。";
             },
             enumerable: true,
             configurable: true
         });
-        WoodsmanPerk.sname = "Dendrophile";
+        WoodsmanPerk.sname = "爱树者";
         WoodsmanPerk.zone = "伍迪森林";
         WoodsmanPerk.spMultiplier = .5;
         return WoodsmanPerk;
@@ -424,7 +424,7 @@ var PASSIVES;
         }
         Object.defineProperty(JousterPerk, "sdescription", {
             get: function () {
-                return "SP gains increased by " + this.spMultiplier * 100 + "% when adventuring in the " + this.zone;
+                return "SP的收益增加了 " + this.spMultiplier * 100 + "% 当在 " + this.zone + "冒险时。";
             },
             enumerable: true,
             configurable: true
