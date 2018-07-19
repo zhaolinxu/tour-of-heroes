@@ -1,14 +1,14 @@
 "use strict";
 (function (SkillType) {
-    SkillType[SkillType["Farming"] = 0] = "耕作";
-    SkillType[SkillType["Combat"] = 1] = "战斗";
-    SkillType[SkillType["Survival"] = 2] = "生存";
-    SkillType[SkillType["Charm"] = 3] = "魅力";
-    SkillType[SkillType["Stealth"] = 4] = "隐形";
-    SkillType[SkillType["Riding"] = 5] = "骑术";
-    SkillType[SkillType["Intellect"] = 6] = "智力";
-    SkillType[SkillType["Piety"] = 7] = "虔诚";
-    SkillType[SkillType["MAX"] = 8] = "最大";
+    SkillType[SkillType["Farming"] = 0] = "Farming";
+    SkillType[SkillType["Combat"] = 1] = "Combat";
+    SkillType[SkillType["Survival"] = 2] = "Survival";
+    SkillType[SkillType["Charm"] = 3] = "Charm";
+    SkillType[SkillType["Stealth"] = 4] = "Stealth";
+    SkillType[SkillType["Riding"] = 5] = "Riding";
+    SkillType[SkillType["Intellect"] = 6] = "Intellect";
+    SkillType[SkillType["Piety"] = 7] = "Piety";
+    SkillType[SkillType["MAX"] = 8] = "MAX";
 })(exports.SkillType || (exports.SkillType = {}));
 var SkillType = exports.SkillType;
 var skill_images_wesnoth = [
