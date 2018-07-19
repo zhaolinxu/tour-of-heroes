@@ -17,11 +17,11 @@ var StatsComponent = (function () {
         this.stats = stats;
         this.zones = zones;
         this.interestingStatTypes = [
-            { stat: index_1.Stat.ActionsTaken, desc: "Actions Taken" },
-            { stat: index_1.Stat.Clicks, desc: "Clicks" },
-            { stat: index_1.Stat.Reincarnations, desc: "Reincarnations" },
-            { stat: index_1.Stat.SpellsCast, desc: "Spells Cast" },
-            { stat: index_1.Stat.CriticalActions, desc: "Critical Actions" }
+            { stat: index_1.Stat.ActionsTaken, desc: "采取的行动" },
+            { stat: index_1.Stat.Clicks, desc: "点击数" },
+            { stat: index_1.Stat.Reincarnations, desc: "转生" },
+            { stat: index_1.Stat.SpellsCast, desc: "施法次数" },
+            { stat: index_1.Stat.CriticalActions, desc: "关键行动" }
         ];
     }
     Object.defineProperty(StatsComponent.prototype, "interestingStats", {
@@ -58,7 +58,7 @@ var StatsComponent = (function () {
     StatsComponent = __decorate([
         core_1.Component({
             selector: 'stats',
-            template: "\n        <h1>Stats</h1>\n        <table class=\"table\">\n            <thead>\n            <tr><th>Stat</th>   <th>This Life</th>  <th>All Time</th></tr>\n            </thead>\n            <tbody>\n            <tr *ngFor=\"let istat of interestingStats\">\n                <td>{{istat.desc}}</td>\n                <td>{{istat.current}}</td>\n                <td>{{istat.total}}</td>\n            </tr>\n            </tbody>\n        </table>\n    "
+            template: "\n        <h1>统计</h1>\n        <table class=\"table\">\n            <thead>\n            <tr><th>统计</th>   <th>本轮游戏</th>  <th>所有累计</th></tr>\n            </thead>\n            <tbody>\n            <tr *ngFor=\"let istat of interestingStats\">\n                <td>{{istat.desc}}</td>\n                <td>{{istat.current}}</td>\n                <td>{{istat.total}}</td>\n            </tr>\n            </tbody>\n        </table>\n    "
         }), 
         __metadata('design:paramtypes', [stats_service_1.StatsService, zones_service_1.Zones])
     ], StatsComponent);
