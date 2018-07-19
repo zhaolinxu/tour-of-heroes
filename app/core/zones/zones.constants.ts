@@ -17,8 +17,7 @@ zones:
 [
     {
         name: 'Turnip Farm',
-        description: `A good place for apprentice farmers to learn the ways of
-            the land - turnips are a pretty forgiving crop.`,
+        description: `这是一个让学徒们学习土地的好地方——萝卜是一种相当宽容的作物。`,
         actions: [
             {vb: "pull", obj:"a turnip", skills: S.Farming},
             {vb: "pull", obj:"a HUGE turnip", skills: S.Farming, bonusLevel: 1},

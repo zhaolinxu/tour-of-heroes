@@ -12,7 +12,7 @@ exports.SUPERZONEDATA = [
         zones: [
             {
                 name: 'Turnip Farm',
-                description: "这是一个让学徒们学习土地的好地方——萝卜是一种相当宽容的作物。",
+                description: "\u8FD9\u662F\u4E00\u4E2A\u8BA9\u5B66\u5F92\u4EEC\u5B66\u4E60\u571F\u5730\u7684\u597D\u5730\u65B9\u2014\u2014\u841D\u535C\u662F\u4E00\u79CD\u76F8\u5F53\u5BBD\u5BB9\u7684\u4F5C\u7269\u3002",
                 actions: [
                     { vb: "pull", obj: "a turnip", skills: index_1.SkillType.Farming },
                     { vb: "pull", obj: "a HUGE turnip", skills: index_1.SkillType.Farming, bonusLevel: 1 },
